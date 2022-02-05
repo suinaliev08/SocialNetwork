@@ -1,15 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
+import Profile from './components/Profile/Profile';
 
 function App() {
-  return (
-      <div className="App">
-          <header className="App-header">
-              <img className='logo' src={logo}/>
-              <h1>Hello world</h1>
-          </header>
-      </div>
-  );
+    return (
+        <div className='app'>
+            <Header />
+            <Navbar />
+            <Profile name='Kerem' status='İ am bored' />
+        </div>
+    );
 }
 
 export default App;
